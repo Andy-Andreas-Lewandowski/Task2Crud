@@ -1,4 +1,4 @@
-import {inject, TestBed} from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 import {PersonService} from "./PersonService";
 import {HttpClient} from "@angular/common/http";
 import {PersonData} from "../Entity/PersonData";

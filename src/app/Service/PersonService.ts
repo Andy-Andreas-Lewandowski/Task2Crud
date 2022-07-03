@@ -1,6 +1,6 @@
 import {catchError, Observable, of} from "rxjs";
 import {PersonData} from "../Entity/PersonData";
-import {Directive, Injectable} from "@angular/core";
+import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {HttpHeaders} from "@angular/common/http";
 

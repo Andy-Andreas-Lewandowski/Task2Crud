@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import {InMemoryDbService} from "angular-in-memory-web-api";
-import {PERSONS} from "./mock-db";
 import {PersonData} from "./Entity/PersonData";
 
 @Injectable({
