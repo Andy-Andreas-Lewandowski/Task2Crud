@@ -1,0 +1,29 @@
+<div class="main">
+  <h1 class="description">Create new Person</h1>
+  <table *ngIf="person">
+    <tr>
+      <th>ATTRIBUTE</th>
+      <th>VALUE</th>
+    </tr>
+    <tr *ngFor = "let key of keys" >
+      <td>
+        <label data-test = "label-type">{{key | uppercase}}:  </label>
+      </td>
+      <td>
+        <input
+          class = "input-{{key}}"
+          type="{{getInputType(person[key])}}"
+          required
+          [(ngModel)] = "person[key]"
+        >
+      </td>
+    </tr>
+  </table>
+
+  <div class="menu">
+    <button class="add" (click)="addPerson()"  routerLink="../select">Add</button>
+    <button class="cancel" routerLink="../select">Cancel</button>
+  </div>
+
+
+</div>

@@ -1,0 +1,14 @@
+<div>
+  <ul>
+    <li>Click on person to see details</li>
+    <li>
+      <button class="newPerson" routerLink="../new">+ New Person</button>
+    </li>
+    <li *ngFor = "let person of persons">
+      <button
+        class="goToPersonDetail"
+        type="button" routerLink = "{{person.id}}"
+      >{{person.firstname}} {{person.lastname}}</button>
+    </li>
+  </ul>
+</div>

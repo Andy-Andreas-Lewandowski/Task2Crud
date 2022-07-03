@@ -1,0 +1,32 @@
+<div class="main">
+  <h1 class="description">Detail View</h1>
+  <table *ngIf="person">
+    <tr>
+      <th>ATTRIBUTE</th>
+      <th>VALUE</th>
+    </tr>
+    <tr *ngFor = "let key of keys" >
+      <td>
+        <label>{{key | uppercase}}:  </label>
+      </td>
+      <td>
+        <input
+               type="{{getInputType(person[key])}}"
+               [disabled]="!isUpdating"
+               required
+               [(ngModel)] = "person[key]"
+        >
+      </td>
+    </tr>
+  </table>
+  <div class="menu">
+    <button class="edit" [disabled]="isUpdating" (click)="startUpdatingPerson()">Edit</button>
+    <button class="delete" routerLink = ".." [disabled]="isUpdating" (click) = "deletePerson()">Delete</button>
+    <button class="return" routerLink = ".." [disabled]="isUpdating" >Return</button>
+  </div>
+  <div class="menu">
+    <button class="update" [disabled]="!isUpdating" (click)="confirmUpdateToPerson()">Update</button>
+    <button class="cancel" [disabled] ="!isUpdating" (click)="cancelUpdateToPerson()">Cancel</button>
+  </div>
+
+</div>

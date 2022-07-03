@@ -1,0 +1,72 @@
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Tahoma;
+  text-align: left;
+}
+
+input {
+  font-size: 40px;
+  width: 550px;
+  border-width: 0px;
+  border-radius: 5px;
+  border-color: #222222;
+  background-color: #d3d3d3;
+}
+
+input:disabled {
+  color: #000000;
+}
+
+label {
+  width: 250px;
+  display: flex;
+}
+
+.main {
+  position: center;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+}
+button {
+  alignment: center;
+  width: 150px;
+  height: 50px;
+  margin: 10px 10px 10px 10px;
+  color: #FFFFFF;
+  background-color: #111111;
+  border-width: 0;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+button:hover{
+  background-color: #222222;
+}
+button:active {
+  background-color: #333333;
+}
+button:disabled {
+  visibility: hidden;
+}
+
+.cancel {
+  margin: 10px 40px 10px 40px;
+}
+
+.add {
+  margin: 10px 40px 10px 40px;
+}
+
+.description{
+  font-family: Tahoma;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+

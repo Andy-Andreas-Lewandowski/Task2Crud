@@ -1,0 +1,32 @@
+ul li {
+
+  margin: 0 10px 20px 10px;
+  justify-content: center;
+  list-style-type: none;
+  vertical-align: top;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Tahoma;
+}
+button {
+  touch-action: pinch-zoom;
+  /* Button styling */
+  background-color: #111111;
+  border-radius: 10px;
+  border-width: 0;
+  /* Button size */
+  height: 90px;
+  width: 700px;
+  /* Font */
+  color: #FFFFFF;
+  font-size: 40px;
+  text-align: justify-all;
+  font-weight: normal;
+}
+button:hover{
+  background-color: #222222;
+}
+button:active {
+  background-color: #333333;
+}

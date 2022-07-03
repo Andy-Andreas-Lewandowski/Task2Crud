@@ -1,0 +1,10 @@
+div {
+  font-family: Tahoma;
+}
+
+h1 {
+  font-family: Tahoma;
+  font-size: 60px;
+  justify-content: center;
+  display: flex;
+}
